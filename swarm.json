@@ -1,0 +1,18 @@
+{
+  "app_name": "twister",
+  "services": [
+    {
+      "service_name": "twister-service",
+      "components": [
+        {
+          "component_name": "twister",
+          "image": "registry.giantswarm.io/$username/timezone",
+          "ports": [28332],
+          "domains": {
+            "twister-$username.gigantic.io": "28332"
+          }
+        }
+      ]
+    }
+  ]
+}
